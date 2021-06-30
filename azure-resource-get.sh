@@ -7,7 +7,7 @@
 #
 # example:
 # $ mkdir 20210630
-# $ cd 20210640
+# $ cd 20210630
 # $ ../azure-resource-get.sh $(az group list -o tsv --query '[].name')
 
 for arg in "$@"; do
