@@ -1,5 +1,23 @@
 # README
 
+## nsg-export.sh
+
+This program will scan all the NSGs in the specified Azure subscription and output them in csv format.
+
+usage:
+
+```bash
+$ ./nsg-export.sh
+```
+
+example:
+
+```bash
+$ az login --tenant <your tenant>
+$ az account set --subscription <target subscription>
+$ ./nsg-export.sh > all-nsg.csv
+```
+
 ## azure-resource-get.sh
 
 This program will run the Azure CLI "az resource show" command for all resources in the specified resource group.
