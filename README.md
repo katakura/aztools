@@ -18,6 +18,24 @@ $ az account set --subscription <target subscription>
 $ ./nsg-export.sh > all-nsg.csv
 ```
 
+## mysql-singleserver-firewall-rule-export.sh
+
+This program will scan all the MySQL ACLs in the specified Azure subscription and output them in csv format.
+
+usage:
+
+```bash
+$ ./mysql-singleserver-firewall-rule-export.sh
+```
+
+example:
+
+```bash
+$ az login --tenant <your tenant>
+$ az account set --subscription <target subscription>
+$ ./mysql-singleserver-firewall-rule-export.sh > all-mysql-fw.csv
+```
+
 ## azure-resource-get.sh
 
 This program will run the Azure CLI "az resource show" command for all resources in the specified resource group.
