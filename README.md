@@ -36,6 +36,24 @@ $ az account set --subscription <target subscription>
 $ ./mysql-singleserver-firewall-rule-export.sh > all-mysql-fw.csv
 ```
 
+## keyvault-firewall-rule-export.sh
+
+This program will scan all the KeyVault ACLs in the specified Azure subscription and output them in csv format.
+
+usage:
+
+```bash
+$ ./keyvault-firewall-rule-export.sh
+```
+
+example:
+
+```bash
+$ az login --tenant <your tenant>
+$ az account set --subscription <target subscription>
+$ ./keyvault-firewall-rule-export.sh > all-keyvault.csv
+```
+
 ## azure-resource-get.sh
 
 This program will run the Azure CLI "az resource show" command for all resources in the specified resource group.
